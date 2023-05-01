@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(4rem + 80px);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+.hoverButton {
+  background: linear-gradient(90deg, #66b666, #ffeb3b, #6dd270, #66b666);
+  background-size: 300%;
+}
+
+.hoverButton:hover {
+  animation: ani 8s linear infinite;
+  border: none;
+}
+
+@keyframes ani {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+.hoverButton:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #66b666, #ffeb3b, #6dd270, #66b666);
+  background-size: 400%;
+  border-radius: 35px;
+  transition: 1s;
+}
+
+.hoverButton:hover::before {
+  filter: blur(20px);
+}
+
+.hoverButton:active {
+  background: linear-gradient(32deg, #03a9f4, #ffeb3b, #6dd270, #03a9f4);
+}
+
+
