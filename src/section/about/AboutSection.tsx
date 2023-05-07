@@ -6,9 +6,9 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="relative flex flex-col items-center max-w-6xl gap-6 mx-auto my-16"
+      className="relative flex flex-col items-center max-w-6xl gap-6 mx-auto my-32"
     >
-      <SectionHeader text="About Us" />
+      <SectionHeader text="Über uns" />
       {about.map((about, index) => (
         <AboutCard
           key={index}

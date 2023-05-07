@@ -20,7 +20,7 @@ const socialLinks: SocialLink[] = [
   {
     link: "https://www.instagram.com/energiespektrum/",
     icon: faInstagram,
-    color: "#66B666",
+    color: "#F243C3",
   },
   {
     link: "https://www.facebook.com/energiespektrum/",
@@ -38,6 +38,10 @@ const footerLinks: FooterLink[] = [
   {
     label: "Datenschutz",
     href: "/dataprotection",
+  },
+  {
+    label: "AGB",
+    href: "/agb",
   },
   {
     label: "Impressum",

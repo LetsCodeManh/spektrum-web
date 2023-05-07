@@ -5,14 +5,13 @@ import { optionsOwner } from "../SurveyData";
 
 type SurveyData = {
   Owner: string;
-  next: () => void;
 };
 
 type SurveyFormProps = SurveyData & {
   updateFields: (fields: Partial<SurveyData>) => void;
 };
 
-const Step3Owner = ({ Owner, updateFields, next }: SurveyFormProps) => {
+const Step3Owner = ({ Owner, updateFields }: SurveyFormProps) => {
   const [selectedValue, setSelectedValue] = useState(Owner);
 
   return (
@@ -23,7 +22,6 @@ const Step3Owner = ({ Owner, updateFields, next }: SurveyFormProps) => {
         onChange={(value) => {
           setSelectedValue(value);
           updateFields({ Owner: value });
-          next();
         }}
       />
     </SurveyWrapper>

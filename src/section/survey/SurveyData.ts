@@ -14,15 +14,26 @@ import Power2 from "../../assets/Power2.png"
 
 import Finanze1 from "../../assets/Finanze1.jpg"
 import Finanze2 from "../../assets/Finanze2.jpg"
+import Finanze3 from "../../assets/Finanze3.png"
 
 import Shape1 from "../../assets/Shape1.jpg"
 import Shape2 from "../../assets/Shape2.jpg"
 import Shape3 from "../../assets/Shape3.jpg"
 import Shape4 from "../../assets/Shape4.jpg"
 
-import Type1 from "../../assets/Type1.jpg"
-import Type2 from "../../assets/Type2.jpg"
-import Type3 from "../../assets/Type3.jpg"
+import Type1 from "../../assets/Type1.png"
+import Type2 from "../../assets/Type2.png"
+import Type3 from "../../assets/Type3.png"
+
+import Location1 from "../../assets/Location1.jpg"
+import Location2 from "../../assets/Type2.png"
+import Location3 from "../../assets/Type3.png"
+import Location4 from "../../assets/Location4.jpeg"
+import Location5 from "../../assets/Location5.jpg"
+
+import Owner1 from "../../assets/Owner1.png"
+import Owner2 from "../../assets/Owner2.png"
+
 
 type FormData = {
   WoPhotovoltaik: string;
@@ -34,6 +45,7 @@ type FormData = {
   Finanze: string;
   Age: string;
   When: string;
+  Zip: string;
   vorname: string;
   nachname: string;
   tel: string;
@@ -50,6 +62,7 @@ const SurveyData: FormData = {
   Finanze: "",
   Age: "",
   When: "",
+  Zip: "",
   vorname: "",
   nachname: "",
   tel: "",
@@ -60,27 +73,27 @@ export default SurveyData;
 
 const optionsLocation = [
   {
-    image: Something,
+    image: Location1,
     text: "Freilandfläche",
     value: "Freilandfläche",
   },
   {
-    image: Something,
+    image: Location2,
     text: "Firmengebäude",
     value: "Firmengebäude",
   },
   {
-    image: Something,
+    image: Location3,
     text: "Mehrfamilienhaus",
     value: "Mehrfamilienhaus",
   },
   {
-    image: Something,
+    image: Location4,
     text: "Ein-/Zweifamilienhaus",
     value: "Ein-/Zweifamilienhaus",
   },
   {
-    image: Something,
+    image: Location5,
     text: "Eigentums-/Mietwohnung",
     value: "Eigentums-/Mietwohnung",
   },
@@ -106,14 +119,14 @@ const optionsType = [
 
 const optionsOwner = [
   {
-    image: Something,
-    text: "Ja",
-    value: "Ja",
+    image: Owner1,
+    text: "Hausbesitzer",
+    value: "Hausbesitzer",
   },
   {
-    image: Something,
-    text: "Nein",
-    value: "Nein",
+    image: Owner2,
+    text: "Eigentümergemeinschaft",
+    value: "Eigentümergemeinschaft",
   },
 ];
 
@@ -165,7 +178,7 @@ const optionsFinanze = [
     value: "Mieten",
   },
   {
-    image: Something,
+    image: Finanze3,
     text: "Beides Interessant",
     value: "Beides Interessant",
   }

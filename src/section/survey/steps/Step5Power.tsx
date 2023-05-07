@@ -5,14 +5,13 @@ import { optionsPower } from "../SurveyData";
 
 type SurveyData = {
   PowerStorage: string;
-  next: () => void;
 };
 
 type SurveyFormProps = SurveyData & {
   updateFields: (fields: Partial<SurveyData>) => void;
 };
 
-const Step5Power = ({ PowerStorage, updateFields, next }: SurveyFormProps) => {
+const Step5Power = ({ PowerStorage, updateFields }: SurveyFormProps) => {
   const [selectedValue, setSelectedValue] = useState(PowerStorage);
 
   return (
@@ -23,7 +22,6 @@ const Step5Power = ({ PowerStorage, updateFields, next }: SurveyFormProps) => {
         onChange={(value) => {
           setSelectedValue(value);
           updateFields({ PowerStorage: value });
-          next();
         }}
       />
     </SurveyWrapper>

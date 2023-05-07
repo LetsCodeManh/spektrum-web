@@ -12,7 +12,7 @@ const FAQsSection = () => {
   };
 
   return (
-    <section id="FAQ" className="relative flex flex-col items-center max-w-6xl gap-6 mx-auto my-16">
+    <section id="FAQ" className="relative flex flex-col items-center max-w-6xl gap-6 mx-auto my-32">
       <SectionHeader text="FAQs" />
       <div className="relative grid gap-4 px-4 md:grid-cols-2 md:px-8">
         <AngleBackground />

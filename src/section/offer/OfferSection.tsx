@@ -6,10 +6,10 @@ const OfferSection = () => {
   return (
     <section
       id="offer"
-      className="flex flex-col items-center max-w-6xl gap-8 px-4 mx-auto my-16 md:px-8"
+      className="flex flex-col items-center max-w-6xl gap-12 px-4 mx-auto my-32 md:px-8"
     >
       <SectionHeader text="Angebot" />
-      <div className="grid gap-4 lg:grid-cols-3">
+      <div className="grid gap-8 lg:grid-cols-3">
         {offers.map((offer, index) => (
           <OfferCard
             key={index}

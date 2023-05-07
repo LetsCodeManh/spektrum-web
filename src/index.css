@@ -15,7 +15,7 @@ body {
 }
 
 .hoverButton {
-  background: linear-gradient(90deg, #66b666, #ffeb3b, #6dd270, #66b666);
+  background: linear-gradient(90deg, #66b666, #ffe81e, #6dd270, #66b666);
   background-size: 300%;
 }
 
@@ -57,3 +57,48 @@ body {
 }
 
 
+.accordion {
+  grid-template-rows: 1fr 0;
+}
+
+.accordion:hover {
+  grid-template-rows: 1fr 1fr;
+}
+
+
+.information {
+  @apply flex flex-col max-w-6xl gap-8 px-4 py-32 mx-auto md:px-8;
+  min-height: calc(100vh - 176px + 80px);
+}
+
+.information h1 {
+  @apply text-3xl font-medium md:text-4xl lg:text-5xl
+}
+
+.information h2 {
+  @apply text-2xl font-medium md:text-3xl
+}
+
+.information h3 {
+  @apply text-xl font-medium md:text-2xl
+}
+
+.information h4 {
+  @apply text-lg font-medium md:text-xl
+}
+
+.information section {
+  @apply flex flex-col gap-4
+}
+
+.information section > div {
+  @apply flex flex-col gap-2
+}
+
+.information section > div > div {
+  @apply flex flex-col gap-2 pl-6
+}
+
+.selected {
+  @apply scale-105 ring-[#66B666] ring-2
+}

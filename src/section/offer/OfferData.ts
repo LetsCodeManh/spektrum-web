@@ -1,4 +1,6 @@
-import Photovoltaik from "../../assets/Offer1.jpg";
+import Offer1 from "../../assets/Offer1.jpg";
+import Offer2 from "../../assets/Offer2.jpg";
+import Offer3 from "../../assets/Offer3.jpg";
 
 type Offer = {
   header: string;
@@ -16,7 +18,7 @@ const offers: Offer[] = [
       "Klimafreundliche Stromproduktion",
       "Unabhängigkeit von Energieversorgern",
     ],
-    image: Photovoltaik,
+    image: Offer1,
     affiliate: "#survey",
     button: "Angebot anforden",
   },
@@ -27,9 +29,9 @@ const offers: Offer[] = [
       "Nahezu Wartungsfrei",
       "optimale Ergänzung zur PV Anlage",
     ],
-    image: Photovoltaik,
+    image: Offer2,
     affiliate: "https://www.solar-volt.de/?ref=oE16Wkg-9mbnRD",
-    button: "Zum Angebot",
+    button: "Bald verfügbar",
   },
   {
     header: "Balkonkraftwerk",
@@ -38,7 +40,7 @@ const offers: Offer[] = [
       "Geringe Anschaffungskosten",
       "Einfache Montage & Mobilität",
     ],
-    image: Photovoltaik,
+    image: Offer3,
     affiliate: "https://www.solar-volt.de/?ref=oE16Wkg-9mbnRD",
     button: "Zum Angebot",
   },

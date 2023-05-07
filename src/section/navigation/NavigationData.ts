@@ -14,7 +14,7 @@ const links: Link[] = [
   },
   {
     href: "#survey",
-    label: "Kontakt",
+    label: "Beratung",
   },
   {
     href: "#about",

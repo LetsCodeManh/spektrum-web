@@ -5,14 +5,13 @@ import { optionsAge } from "../SurveyData";
 
 type SurveyData = {
   Age: string;
-  next: () => void;
 };
 
 type SurveyFormProps = SurveyData & {
   updateFields: (fields: Partial<SurveyData>) => void;
 };
 
-const Step7Age = ({ Age, updateFields, next }: SurveyFormProps) => {
+const Step7Age = ({ Age, updateFields }: SurveyFormProps) => {
   const [selectedValue, setSelectedValue] = useState(Age);
 
   return (
@@ -23,7 +22,6 @@ const Step7Age = ({ Age, updateFields, next }: SurveyFormProps) => {
         onChange={(value) => {
           setSelectedValue(value);
           updateFields({ Age: value });
-          next();
         }}
       />
     </SurveyWrapper>

@@ -4,7 +4,7 @@ type Header = {
 
 const SectionHeader = ({ text }: Header) => {
   return (
-    <h1 className="text-3xl font-medium md:text-4xl lg:text-5xl">{text}</h1>
+    <h2 className="text-3xl font-medium md:text-4xl lg:text-5xl">{text}</h2>
   );
 };
 

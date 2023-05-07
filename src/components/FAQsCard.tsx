@@ -18,7 +18,7 @@ const FAQsCard = ({
   openIndex,
 }: FAQs) => {
   return (
-    <div className="flex flex-col gap-2">
+    <div className={`grid gap-2`}>
       <button
         className="flex items-center justify-between h-20 px-4 py-2 rounded-lg shadow-2xl md:h-28 hover:text-[#66b666] duration-300 bg-[#fef9fc] hover:shadow-none"
         onClick={() => handleClick(index)}
@@ -33,11 +33,7 @@ const FAQsCard = ({
         />
       </button>
       {openIndex === index && (
-        <div
-          className={`px-4 py-2 rounded-lg shadow-lg bg-[#fef9fc] ${
-            openIndex === index ? "max-h-full" : "max-h-0"
-          }`}
-        >
+        <div className={`px-4 py-2 rounded-lg shadow-lg bg-[#fef9fc]`}>
           <Text text={answer} />
         </div>
       )}

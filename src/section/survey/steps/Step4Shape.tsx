@@ -5,14 +5,13 @@ import { optionsShape } from "../SurveyData";
 
 type SurveyData = {
   RoofShape: string;
-  next: () => void;
 };
 
 type SurveyFormProps = SurveyData & {
   updateFields: (fields: Partial<SurveyData>) => void;
 };
 
-const Step4Shape = ({ RoofShape, updateFields, next }: SurveyFormProps) => {
+const Step4Shape = ({ RoofShape, updateFields }: SurveyFormProps) => {
   const [selectedValue, setSelectedValue] = useState(RoofShape);
 
   return (
@@ -23,7 +22,6 @@ const Step4Shape = ({ RoofShape, updateFields, next }: SurveyFormProps) => {
         onChange={(value) => {
           setSelectedValue(value);
           updateFields({ RoofShape: value });
-          next();
         }}
       />
     </SurveyWrapper>

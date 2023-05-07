@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import { useMultistepForm } from "../../hooks/useMultistepFrom";
 
 import SurveyData from "./SurveyData";
@@ -10,9 +10,11 @@ import Step5Power from "./steps/Step5Power";
 import Step6Finanze from "./steps/Step6Finanze";
 import Step7Age from "./steps/Step7Age";
 import Step8When from "./steps/Step8When";
+import Step9Zip from "./steps/Step9Zip";
 import ContactForm from "./steps/ContactForm";
 import SectionHeader from "../../components/SectionHeader";
 import AttentionButton from "../../components/AttentionButton";
+import AttentionButtonForm from "../../components/AttentionButtonForm";
 
 type FormData = {
   WoPhotovoltaik: string;
@@ -24,6 +26,7 @@ type FormData = {
   Finanze: string;
   Age: string;
   When: string;
+  Zip: string;
   vorname: string;
   nachname: string;
   tel: string;
@@ -42,29 +45,32 @@ const SurveySection = () => {
 
   const { steps, step, currentStepIndex, isFirstStep, isLastStep, next, back } =
     useMultistepForm([
-      <Step1Location {...data} updateFields={updateFields} next={onSubmit} />,
-      <Step2Type {...data} updateFields={updateFields} next={onSubmit} />,
-      <Step3Owner {...data} updateFields={updateFields} next={onSubmit} />,
-      <Step4Shape {...data} updateFields={updateFields} next={onSubmit} />,
-      <Step5Power {...data} updateFields={updateFields} next={onSubmit} />,
-      <Step6Finanze {...data} updateFields={updateFields} next={onSubmit} />,
-      <Step7Age {...data} updateFields={updateFields} next={onSubmit} />,
-      <Step8When {...data} updateFields={updateFields} next={onSubmit} />,
+      <Step1Location {...data} updateFields={updateFields} />,
+      <Step2Type {...data} updateFields={updateFields} />,
+      <Step3Owner {...data} updateFields={updateFields} />,
+      <Step4Shape {...data} updateFields={updateFields} />,
+      <Step5Power {...data} updateFields={updateFields} />,
+      <Step6Finanze {...data} updateFields={updateFields} />,
+      <Step7Age {...data} updateFields={updateFields} />,
+      <Step8When {...data} updateFields={updateFields} />,
+      <Step9Zip {...data} updateFields={updateFields} />,
       <ContactForm {...data} updateFields={updateFields} />,
     ]);
 
-  function onSubmit() {
+  function onSubmit(e: FormEvent) {
+    e.preventDefault();
     if (!isLastStep) {
       return next();
     }
+    setShowModal(true);
   }
 
   return (
     <section
       id="survey"
-      className="relative flex flex-col items-center max-w-6xl gap-4 px-4 mx-auto my-16 md:px-8"
+      className="relative flex flex-col items-center max-w-6xl gap-4 px-4 mx-auto my-32 md:px-8"
     >
-      <SectionHeader text="Survey" />
+      <SectionHeader text="Beratung" />
       <form
         onSubmit={onSubmit}
         className="flex flex-col w-full gap-8 p-8 overflow-hidden bg-[#FEF9FC] rounded-lg shadow-2xl"
@@ -83,12 +89,12 @@ const SurveySection = () => {
             />
           </div>
         </div>
-        <div className="flex gap-8">
-          {isFirstStep && (
-            <AttentionButton text="Back" onClick={back} />
-          )}
-          {isLastStep && (
-            <AttentionButton text="Confirm" onClick={next} />
+        <div className="flex justify-center gap-8">
+          {isFirstStep && <AttentionButton text="Zurück" onClick={back} />}
+          {isLastStep ? (
+            <AttentionButton text="Senden" onClick={next} />
+          ) : (
+            <AttentionButtonForm text="Weiter" onClick={next} />
           )}
         </div>
       </form>

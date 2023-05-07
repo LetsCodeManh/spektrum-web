@@ -9,10 +9,10 @@ const ServicesSection = () => {
   return (
     <section
       id="services"
-      className="relative flex flex-col items-center max-w-6xl gap-4 mx-auto my-16 lg:flex-row"
+      className="relative flex flex-col items-center max-w-6xl gap-4 mx-auto my-32 lg:flex-row"
     >
       <AngleBackground />
-      <div className="flex flex-col gap-2 px-4 text-center lg:gap-4 lg:text-left lg:px-8 lg:w-[45%]">
+      <div className="flex flex-col gap-2 px-4 text-center lg:gap-4 lg:text-left lg:px-8 lg:w-[90%]">
         <SectionHeader text="Services" />
         <SectionSubHeader text="Das bietet Ihre Energiespektrum" />
         <Text

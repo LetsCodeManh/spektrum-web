@@ -15,7 +15,7 @@ const Option: React.FC<OptionProps> = ({
 }) => {
   return (
     <div
-      className={`flex md:flex-col cursor-pointer gap-4 items-center border shadow-2xl bg-white rounded-lg min-w-[200px] px-4 md:py-4 ${selected ? "selected" : ""}`}
+      className={`flex md:flex-col cursor-pointer gap-4 items-center border shadow-2xl bg-white rounded-lg min-w-[200px] px-4 md:py-4 ${selected ? "selected" : ""} transition-all duration-300`}
       onClick={() => onClick(value)}
     >
       <img src={image} alt={text} className="object-cover w-16 aspect-square" />

@@ -6,14 +6,13 @@ import { optionsFinanze } from "../SurveyData";
 
 type SurveyData = {
   Finanze: string;
-  next: () => void;
 };
 
 type SurveyFormProps = SurveyData & {
   updateFields: (fields: Partial<SurveyData>) => void;
 };
 
-const Step6Finanze = ({ Finanze, updateFields, next }: SurveyFormProps) => {
+const Step6Finanze = ({ Finanze, updateFields }: SurveyFormProps) => {
   const [selectedValue, setSelectedValue] = useState(Finanze);
 
   return (
@@ -24,7 +23,6 @@ const Step6Finanze = ({ Finanze, updateFields, next }: SurveyFormProps) => {
         onChange={(value) => {
           setSelectedValue(value);
           updateFields({ Finanze: value });
-          next();
         }}
       />
     </SurveyWrapper>

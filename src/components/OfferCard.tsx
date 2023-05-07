@@ -31,7 +31,7 @@ const OfferCard = ({ image, header, benefits, affiliate, button }: Offer) => {
             ))}
           </ul>
         </div>
-        <div className="bg-[#EDFFE6] w-full flex justify-center py-4 lg:justify-start lg:pl-10">
+        <div className="flex justify-center w-full pt-4 pb-8 lg:justify-start lg:pl-10">
           <a
             href={affiliate}
             target={affiliate !== "#survey" ? "_blank" : "_self"}

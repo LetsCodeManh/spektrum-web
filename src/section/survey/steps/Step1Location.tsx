@@ -5,7 +5,6 @@ import { optionsLocation } from "../SurveyData";
 
 type SurveyData = {
   WoPhotovoltaik: string;
-  next: () => void;
 };
 
 type SurveyFormProps = SurveyData & {
@@ -15,7 +14,6 @@ type SurveyFormProps = SurveyData & {
 const Step1Location = ({
   WoPhotovoltaik,
   updateFields,
-  next,
 }: SurveyFormProps) => {
   const [selectedValue, setSelectedValue] = useState(WoPhotovoltaik);
 
@@ -27,7 +25,6 @@ const Step1Location = ({
         onChange={(value) => {
           setSelectedValue(value);
           updateFields({ WoPhotovoltaik: value });
-          next();
         }}
       />
     </SurveyWrapper>
