@@ -21,7 +21,6 @@ const offers: Offer[] = [
     image: Offer1,
     affiliate: "https://share-eu1.hsforms.com/14we2Av7SQTCH16IungU1Mgfyab0",
     button: "Angebot anforden",
-    color: ""
   },
   {
     header: "Wärmepumpe",

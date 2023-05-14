@@ -10,7 +10,7 @@ type Offer = {
   button: string;
 };
 
-const OfferCard = ({ image, header, benefits, affiliate, button, color }: Offer) => {
+const OfferCard = ({ image, header, benefits, affiliate, button }: Offer) => {
   return (
     <div className="relative">
       <div className="flex flex-col gap-4 overflow-hidden bg-[#FEF9FC] rounded-lg shadow-2xl lg:justify-between hover:scale-[98%] transition-all duration-300 hover:shadow-[#66B666]">
@@ -36,7 +36,7 @@ const OfferCard = ({ image, header, benefits, affiliate, button, color }: Offer)
             href={affiliate}
             target={affiliate !== "#offer" ? "_blank" : "_self"}
           >
-            <AttentionButton text={button} color="color" />
+            <AttentionButton text={button}/>
           </a>
         </div>
       </div>
