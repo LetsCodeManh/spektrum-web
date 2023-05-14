@@ -19,7 +19,7 @@ const HomeSection = () => {
           </span>
         </h1>
   
-        <a href="#survey">
+        <a href="#offer">
           <AttentionButton text="zur Lösung"/>
         </a>
       </div>

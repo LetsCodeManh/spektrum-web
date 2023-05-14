@@ -19,8 +19,9 @@ const offers: Offer[] = [
       "Unabhängigkeit von Energieversorgern",
     ],
     image: Offer1,
-    affiliate: "#survey",
+    affiliate: "https://share-eu1.hsforms.com/14we2Av7SQTCH16IungU1Mgfyab0",
     button: "Angebot anforden",
+    color: ""
   },
   {
     header: "Wärmepumpe",
@@ -30,7 +31,7 @@ const offers: Offer[] = [
       "optimale Ergänzung zur PV Anlage",
     ],
     image: Offer2,
-    affiliate: "https://www.solar-volt.de/?ref=oE16Wkg-9mbnRD",
+    affiliate: "#offer",
     button: "Bald verfügbar",
   },
   {

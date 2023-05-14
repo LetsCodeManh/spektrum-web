@@ -45,9 +45,9 @@ const NavigationSection = () => {
             </li>
           ))}
 
-          <Link to="/contact">
+          <a href="https://share-eu1.hsforms.com/1Su2qESYwStSMLUigykOzXQfyab0">
             <AttentionButton text="Partner werden" />
-          </Link>
+          </a>
         </ul>
       </div>
     </div>

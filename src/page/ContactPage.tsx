@@ -4,6 +4,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
+{/* <script
+      charset="utf-8"
+      type="text/javascript"
+      src="//js-eu1.hsforms.net/forms/embed/v2.js"
+    ></script>
+    <script>
+      hbspt.forms.create({
+        region: "eu1",
+        portalId: "26793900",
+        formId: "4aedaa11-2630-4ad4-8c2d-48a0ca43b35d",
+      });
+    </script> */}
+
+
 const ContactPage = () => {
   const [showDialog, setShowDialog] = useState(false);
 
@@ -179,6 +193,7 @@ const ContactPage = () => {
           </div>
         </section>
       </main>
+      
       <FooterSection />
     </>
   );

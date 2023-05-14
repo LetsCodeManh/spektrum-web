@@ -1,11 +1,16 @@
 type props = {
   text: string;
-  onClick?: () => void
+  color: string;
+  onClick?: () => void;
 };
 
-const AttentionButton = ({ text, onClick }: props) => {
+const AttentionButton = ({ text, onClick, color }: props) => {
   return (
-    <button className="relative z-10 h-10 px-4 text-sm text-center text-black rounded-full hoverButton" type="button" onClick={onClick}>
+    <button
+      className="relative z-10 h-10 px-4 text-sm text-center text-black rounded-full hoverButton"
+      type="button"
+      onClick={onClick}
+    >
       {text}
     </button>
   );

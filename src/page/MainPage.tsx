@@ -18,7 +18,7 @@ const MainPage = () => {
         <HomeSection />
         <ServicesSection />
         <OfferSection />
-        <SurveySection />
+        {/* <SurveySection /> */}
         <FAQsSection />
         <AboutSection />
         <CTA />

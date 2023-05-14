@@ -13,7 +13,7 @@ const CTA = () => {
             machen Sie sich unabhängig von steigenden Strompreisen!
           </h2>
         </div>
-        <a href="#survey">
+        <a href="https://share-eu1.hsforms.com/14we2Av7SQTCH16IungU1Mgfyab0">
           <AttentionButtonBig text="Jetzt Beratung anfordern" />
         </a>
       </div>
