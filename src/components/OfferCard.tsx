@@ -33,18 +33,12 @@ const OfferCard = ({ image, header, benefits, affiliate, button }: Offer) => {
           </ul>
         </div>
         <div className="flex justify-center w-full pt-4 pb-8 lg:justify-start lg:pl-10">
-          {affiliate === "/contact" ? (
-            <Link to={affiliate}>
-              <AttentionButton text={button} />
-            </Link>
-          ) : (
-            <a
-              href={affiliate}
-              target={affiliate !== "#offer" ? "_blank" : "_self"}
-            >
-              <AttentionButton text={button} />
-            </a>
-          )}
+          <a
+            href={affiliate}
+            target={affiliate !== "#offer" ? "_blank" : "_self"}
+          >
+            <AttentionButton text={button} />
+          </a>
         </div>
       </div>
 

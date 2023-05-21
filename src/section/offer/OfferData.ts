@@ -19,7 +19,8 @@ const offers: Offer[] = [
       "Unabhängigkeit von Energieversorgern",
     ],
     image: Offer1,
-    affiliate: "/contact",
+    affiliate:
+      "https://docs.google.com/forms/d/1A9g9mJ7rB6--3rI5PdjM7cErNVIg6fNhugSpwsIlYCQ/edit",
     button: "Angebot anforden",
   },
   {
