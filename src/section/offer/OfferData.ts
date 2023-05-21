@@ -19,7 +19,7 @@ const offers: Offer[] = [
       "Unabhängigkeit von Energieversorgern",
     ],
     image: Offer1,
-    affiliate: "https://share-eu1.hsforms.com/14we2Av7SQTCH16IungU1Mgfyab0",
+    affiliate: "/contact",
     button: "Angebot anforden",
   },
   {

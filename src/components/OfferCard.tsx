@@ -1,6 +1,7 @@
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AttentionButton from "./AttentionButton";
+import { Link } from "react-router-dom";
 
 type Offer = {
   header: string;
@@ -32,12 +33,18 @@ const OfferCard = ({ image, header, benefits, affiliate, button }: Offer) => {
           </ul>
         </div>
         <div className="flex justify-center w-full pt-4 pb-8 lg:justify-start lg:pl-10">
-          <a
-            href={affiliate}
-            target={affiliate !== "#offer" ? "_blank" : "_self"}
-          >
-            <AttentionButton text={button}/>
-          </a>
+          {affiliate === "/contact" ? (
+            <Link to={affiliate}>
+              <AttentionButton text={button} />
+            </Link>
+          ) : (
+            <a
+              href={affiliate}
+              target={affiliate !== "#offer" ? "_blank" : "_self"}
+            >
+              <AttentionButton text={button} />
+            </a>
+          )}
         </div>
       </div>
 
