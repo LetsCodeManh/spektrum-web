@@ -20,7 +20,7 @@ const OfferCard = ({ image, header, benefits, affiliate, button }: Offer) => {
           <h2 className="text-xl font-semibold text-[#66b666] md:text-2xl">
             {header}
           </h2>
-          <ul className="flex flex-col items-center lg:items-start">
+          <ul className="flex flex-col items-start">
             {benefits.map((benefit, index) => (
               <li
                 key={index}
@@ -33,10 +33,7 @@ const OfferCard = ({ image, header, benefits, affiliate, button }: Offer) => {
           </ul>
         </div>
         <div className="flex justify-center w-full pt-4 pb-8 lg:justify-start lg:pl-10">
-          <a
-            href={affiliate}
-            target={affiliate !== "#offer" ? "_blank" : "_self"}
-          >
+          <a href={affiliate} target="_blank">
             <AttentionButton text={button} />
           </a>
         </div>

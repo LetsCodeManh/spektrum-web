@@ -31,8 +31,9 @@ const offers: Offer[] = [
       "optimale Ergänzung zur PV Anlage",
     ],
     image: Offer2,
-    affiliate: "#offer",
-    button: "Bald verfügbar",
+    affiliate:
+      "https://docs.google.com/forms/d/1PyEI01n3eMwVBm8KFG8Pt-fNEPZXDx9lzE0c8sI0f6A/edit",
+    button: "Zum Angebot",
   },
   {
     header: "Balkonkraftwerk",

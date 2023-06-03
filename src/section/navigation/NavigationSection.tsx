@@ -29,26 +29,27 @@ const NavigationSection = () => {
           )}
         </div>
 
-        <ul
-          className={`md:flex md:items-center md:gap-6 md:pb-0 pb-12 absolute md:static bg-white left-0 w-full md:w-auto md:pl-0 pl-8 transition-all duration-500 ease-in ${
+        <div
+          className={`md:flex md:items-center md:gap-6 md:pb-0 pb-12 absolute md:static bg-white left-0 w-full md:w-auto md:pl-0 transition-all duration-500 ease-in ${
             isOpen ? "top-20" : "top-[-490px]"
           }`}
         >
-          {links.map((link, index) => (
-            <li key={index} className="my-8 text-xl md:my-0">
-              <a
-                href={link.href}
-                className="text-sm font-normal md:text-base hover:text-[#66b666] duration-300"
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
-
-          <a href="https://share-eu1.hsforms.com/1Su2qESYwStSMLUigykOzXQfyab0">
-            <AttentionButton text="Partner werden" />
-          </a>
-        </ul>
+          <ul className="flex flex-col items-center gap-8 md:flex-row md:flex md:items-center md:gap-6 md:pb-0 md:pl-0 md:w-auto">
+            {links.map((link, index) => (
+              <li key={index} className="text-xl md:my-0">
+                <a
+                  href={link.href}
+                  className="text-sm font-normal md:text-base hover:text-[#66b666] duration-300"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+            <a href="https://share-eu1.hsforms.com/1Su2qESYwStSMLUigykOzXQfyab0">
+              <AttentionButton text="Partner werden" />
+            </a>
+          </ul>
+        </div>
       </div>
     </div>
   );
