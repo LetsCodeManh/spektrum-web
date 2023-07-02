@@ -17,7 +17,7 @@ const AboutSection = () => {
           key={index}
           header={t(about.header)}
           descriptionOne={t(about.descriptionOne)}
-          descriptionTwo={t(about.descriptionTwo)}
+          descriptionTwo={about.descriptionTwo ? t(about.descriptionTwo) : ""}
           image={about.image}
         />
       ))}

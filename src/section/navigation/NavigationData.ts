@@ -6,15 +6,15 @@ type Link = {
 const links: Link[] = [
   {
     href: "#services",
-    label: "Services",
+    label: "navigation.service",
   },
   {
     href: "#offer",
-    label: "Angebot",
+    label: "navigation.offer",
   },
   {
     href: "#about",
-    label: "Über uns",
+    label: "navigation.about",
   },
 ];
 

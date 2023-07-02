@@ -4,6 +4,11 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import Logo from "../../assets/Nav1.png";
 import ProgressBar from "../../components/ProgressBar";
 import { useTranslation } from "react-i18next";
+import links from "./NavigationData";
+
+interface Language {
+  nativeName: string;
+}
 
 const lngs = {
   de: { nativeName: "DE" },
@@ -39,30 +44,19 @@ const NavigationSection = () => {
           }`}
         >
           <ul className="flex flex-col items-center justify-center gap-8 md:flex-row md:flex md:items-center md:gap-6 md:pb-0 md:pl-0 md:w-auto">
-            <li className="flex items-center justify-center text-xl md:my-0">
-              <a
-                href="#services"
-                className="text-sm font-normal md:text-base hover:text-[#66b666] duration-300"
+            {links.map((link, index) => (
+              <li
+                className="flex items-center justify-center text-xl md:my-0"
+                key={index}
               >
-                {t("navigation.service")}
-              </a>
-            </li>
-            <li className="flex items-center justify-center text-xl md:my-0">
-              <a
-                href="#offer"
-                className="text-sm font-normal md:text-base hover:text-[#66b666] duration-300"
-              >
-                {t("navigation.offer")}
-              </a>
-            </li>
-            <li className="flex items-center justify-center text-xl md:my-0">
-              <a
-                href="#about"
-                className="text-sm font-normal md:text-base hover:text-[#66b666] duration-300"
-              >
-                {t("navigation.about")}
-              </a>
-            </li>
+                <a
+                  href="#services"
+                  className="text-sm font-normal md:text-base hover:text-[#66b666] duration-300"
+                >
+                  {t(link.label)}
+                </a>
+              </li>
+            ))}
 
             <div className="flex items-center justify-center gap-2 text-sm font-normal md:text-base">
               {Object.keys(lngs).map((lng) => (
@@ -75,7 +69,7 @@ const NavigationSection = () => {
                   onClick={() => i18n.changeLanguage(lng)}
                   disabled={i18n.resolvedLanguage === lng}
                 >
-                  {lngs[lng].nativeName}
+                  {lngs[lng as keyof typeof lngs].nativeName}
                 </button>
               ))}
             </div>
