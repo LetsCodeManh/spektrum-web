@@ -23,18 +23,18 @@ const offers: Offer[] = [
       "https://docs.google.com/forms/d/1A9g9mJ7rB6--3rI5PdjM7cErNVIg6fNhugSpwsIlYCQ/edit",
     button: "offerSection.first.CTA",
   },
-  {
-    header: "offerSection.second.headline",
-    benefits: [
-      "offerSection.second.bulletPoints.first",
-      "offerSection.second.bulletPoints.second",
-      "offerSection.second.bulletPoints.third",
-    ],
-    image: Offer2,
-    affiliate:
-      "https://docs.google.com/forms/d/1PyEI01n3eMwVBm8KFG8Pt-fNEPZXDx9lzE0c8sI0f6A/edit",
-    button: "offerSection.second.CTA",
-  },
+  // {
+  //   header: "offerSection.second.headline",
+  //   benefits: [
+  //     "offerSection.second.bulletPoints.first",
+  //     "offerSection.second.bulletPoints.second",
+  //     "offerSection.second.bulletPoints.third",
+  //   ],
+  //   image: Offer2,
+  //   affiliate:
+  //     "https://docs.google.com/forms/d/1PyEI01n3eMwVBm8KFG8Pt-fNEPZXDx9lzE0c8sI0f6A/edit",
+  //   button: "offerSection.second.CTA",
+  // },
   {
     header: "offerSection.third.headline",
     benefits: [
