@@ -1,17 +1,21 @@
 import { Link } from "react-router-dom";
 import { footerLinks, socialLinks } from "./FooterData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTranslation } from "react-i18next";
+
 const FooterSection = () => {
+  const { t } = useTranslation();
+
   return (
     <footer id="footer" className="text-white bg-black ">
       <div className="flex flex-col items-center max-w-6xl gap-4 py-8 mx-auto md:flex-row md:justify-between md:px-8">
         <p className="text-sm font-normal">
-          &#169; Energiespektrum 2023. Alle Rechte vorbehalten.
+          &#169; {t("footerSection.headline")}
         </p>
         <div className="flex gap-6">
           {footerLinks.map((link, index) => (
             <Link key={index} to={link.href} className="text-sm font-normal">
-              {link.label}
+              {t(link.label)}
             </Link>
           ))}
         </div>

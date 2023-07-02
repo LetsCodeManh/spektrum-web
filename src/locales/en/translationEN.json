@@ -1,0 +1,117 @@
+{
+  "navigation": {
+    "service": "Services",
+    "offer": "Offer",
+    "about": "About us",
+    "faqs": "FAQs"
+  },
+  "heroSection": {
+    "headline": "The quick & easy green electricity solution for your ",
+    "headlineOption": {
+      "first": "business",
+      "second": "organization"
+    },
+    "CTA": "Solution"
+  },
+  "servicesSection": {
+    "headline": "That provides your Energiespektrum",
+    "subheadline": "We offer our customers orientation and help to put them in contact with suitable specialist companies. All this free of charge and without obligation!",
+    "servicesOption": {
+      "first": {
+        "headline": "Personal advice",
+        "text": "Our tools, checklists and customer advisors are always available to advise you"
+      },
+      "second": {
+        "headline": "Information",
+        "text": "Expert knowledge and tools everything from a single source!"
+      },
+      "third": {
+        "headline": "Mediation",
+        "text": "On request, we can put you in touch with selected specialist companies so that you can make your dreams come true"
+      }
+    }
+  },
+  "offerSection": {
+    "first": {
+      "headline": "Photovoltaic system",
+      "bulletPoints": {
+        "first": "Electricity cost reduction to 8-12 ct/kWh",
+        "second": "Climate-friendly electricity production",
+        "third": "Independence from energy suppliers"
+      },
+      "CTA": "Request an offer"
+    },
+    "second": {
+      "headline": "Heat pump",
+      "bulletPoints": {
+        "first": "Inexhaustible energy generation",
+        "second": "Almost maintenance free",
+        "third": "Optimal addition to the PV system"
+      },
+      "CTA": "To Offer"
+    },
+    "third": {
+      "headline": "Balcony power plant",
+      "bulletPoints": {
+        "first": "For beginners without their own building",
+        "second": "Low acquisition costs",
+        "third": "Easy assembly & mobility"
+      },
+      "CTA": "To Offer"
+    }
+  },
+  "faqsSection": {
+    "first": {
+      "headline": "What does Energiespektrum offer?",
+      "text": "Energie Spectrum is a recommendation platform for large and small green electricity projects especially for companies. We offer relevant specialist knowledge and provide orientation, advise you personally and individually and, if you wish, put you in touch with specialist companies in your area. For a goal-oriented mediation."
+    },
+    "second": {
+      "headline": "Why do I have to leave my contact details?",
+      "text": "We don't want to waste your time recommending specialist companies that don't fit your project. That is why it is important to us to specify your information from the questionnaire at relevant points in a personal interview. You will be contacted by our customer advisor after your request. They compare the project with potential specialist companies in your region. Of course without obligation and free of charge."
+    },
+    "third": {
+      "headline": "Why should I use Energiespektrum?",
+      "text": "We at Energie Spectrum have understood how important the self-sufficient energy supply is. We provide smart service tools such as checklists, requirement calculators and high-quality content that offer recommendations for suitable and future-proof solutions and thus good orientation for you. The search for a suitable specialist company that you trust is tedious, time-consuming and complicated. Above all, we want to offer you one thing: simplicity. With our experience and our network, we help you to find exactly the right specialist company in your area - free of charge."
+    },
+    "fourth": {
+      "headline": "Is my request to Energie Spectrum really free of charge?",
+      "text": "Yes. Our service costs you nothing and is absolutely non-binding. We finance the service through the commission of our providers."
+    },
+    "fifth": {
+      "headline": "Why do I have to fill out a questionnaire?",
+      "text": "We thought long and hard about the easiest way to describe your project to us and have come to the conclusion that our questionnaire is the perfect form. Your answers will help us to make it easier for you to select the right specialist companies. You can discuss individual details with our customer advisors personally."
+    },
+    "sixth": {
+      "headline": "What if I still have questions and/or need help after the project is finished?",
+      "text": "Of course, we at Energie Spectrum are also available to you after the end of your project. If you have any questions and/or need assistance, you can contact us at any time using our contact form."
+    },
+    "seventh": {
+      "headline": "Is the data used for other purposes?",
+      "text": "No. We pass on your data to partner companies so that they can make you an offer. We will never pass on your data to third parties for other purposes."
+    }
+  },
+  "aboutSection": {
+    "first": {
+      "headline": "Organisation",
+      "text": {
+        "first": "At Energie spectrum we offer simple and accessible solutions for the energy supply of the future. We understand that the transition to renewable energy can be challenging for many people, so we aim to provide solutions that are easy to understand and use.",
+        "second": "Our team is made up of experienced professionals who are constantly working to create innovative solutions for our customers. We offer individually adapted energy concepts that are tailored to the needs and resources of our customers."
+      }
+    },
+    "second": {
+      "headline": "Vision & Values",
+      "text": "We are convinced that the energy supply of the future must be simple, sustainable and accessible. With our renewable energy solutions, we want to help make the world a better place."
+    }
+  },
+  "CTASection": {
+    "headline": "What are you waiting for?",
+    "subheadline": "Make yourself independent of rising electricity prices!",
+    "CTA": "Request Advice Now!"
+  },
+  "footerSection": {
+    "headline": "Energiespektrum 2023. All rights reserved.",
+    "dateprotection": "Data Protection",
+    "AGB": "AGB",
+    "impressum": "Impressum"
+  }
+}

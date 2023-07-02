@@ -36,15 +36,15 @@ const socialLinks: SocialLink[] = [
 
 const footerLinks: FooterLink[] = [
   {
-    label: "Datenschutz",
+    label: "footerSection.dateprotection",
     href: "/dataprotection",
   },
   {
-    label: "AGB",
+    label: "footerSection.AGB",
     href: "/agb",
   },
   {
-    label: "Impressum",
+    label: "footerSection.impressum",
     href: "/impressum",
   },
 ];

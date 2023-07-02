@@ -36,7 +36,7 @@ const Cookies = () => {
             <p>
               We use cookies to ensure that we give you the best experience on
               our website.{" "}
-              <a href="/" className="text-[#66b666]">
+              <a href="/dataprotection" className="text-[#66b666]">
                 Read cookies policies.
               </a>
             </p>

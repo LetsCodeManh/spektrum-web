@@ -1,0 +1,117 @@
+{
+  "navigation": {
+    "service": "Services",
+    "offer": "Angebot",
+    "about": "Über uns",
+    "faqs": "FAQs"
+  },
+  "heroSection": {
+    "headline": "Die schnelle & einfache Grünstrom-Lösung für Ihr ",
+    "headlineOption": {
+      "first": "Unternehmen",
+      "second": "Gewerbe"
+    },
+    "CTA": "zur Lösung"
+  },
+  "servicesSection": {
+    "headline": "Das bietet Ihre Energiespektrum",
+    "subheadline": "Wir bieten unseren Kundinen Orientierung und helfen bei der Vermittlung an passende Fach firmen. Das alles kostenlos & unverbindlich!",
+    "servicesOption": {
+      "first": {
+        "headline": "Persönliche Beratung",
+        "text": "Unsere Tools, Checklisten und Kundenberater:innen stehen Ihnen jederzeit Beratend zur Verfügung"
+      },
+      "second": {
+        "headline": "Information",
+        "text": "Expertenwissen und Tools alles aus einer Hand!"
+      },
+      "third": {
+        "headline": "Vermittlung",
+        "text": "Auf Wunsch vermitteln wir an ausgewählte Fachfirmen, damit Sie ihre Träume verwirklichen können"
+      }
+    }
+  },
+  "offerSection": {
+    "first": {
+      "headline": "Photovoltaik-Anlage",
+      "bulletPoints": {
+        "first": "Stromkostensenkung auf 8-12ct/kWh",
+        "second": "Klimafreundliche Stromproduktion",
+        "third": "Unabhängigkeit von Energieversorgern"
+      },
+      "CTA": "Angebot anfordern"
+    },
+    "second": {
+      "headline": "Wärmepumpe",
+      "bulletPoints": {
+        "first": "Unerschöpfliche Energiegewinnung",
+        "second": "Nahezu Wartungsfrei",
+        "third": "Optimale Ergänzung zur PV Anlage"
+      },
+      "CTA": "Zum Angebot"
+    },
+    "third": {
+      "headline": "Balkonkraftwerk",
+      "bulletPoints": {
+        "first": "Für Einsteiger ohne eigenes Gebäude",
+        "second": "Geringe Anschaffungskosten",
+        "third": "Einfache Montage & Mobilität"
+      },
+      "CTA": "Zum Angebot"
+    }
+  },
+  "faqsSection": {
+    "first": {
+      "headline": "Was bietet Energiespektrum an?",
+      "text": "Energiespektrum ist eine Empfehlungsplattform für große sowie kleine Grünstrom-Projekte speziell für Unternehmen. Wir bieten relevantes Fachwissen und geben Orientierung, beraten persönlich und individuell und vermitteln auf Wunsch Fachfirmen in Ihrer Umgebung. Für eine zielorientierte Vermittlung."
+    },
+    "second": {
+      "headline": "Warum muss ich meine Kontaktdaten hinterlassen?",
+      "text": "Wir wollen Ihre Zeit nicht vergeuden, indem wir Ihnen Fachfirmen empfehlen, die nicht zu Ihrem Projekt passen. Deswegen ist es uns wichtig, Ihre Angaben aus dem Fragebogen an relevanten Stellen in einem persönlichen Gespräch zu spezifizieren. Dazu werden Sie im Anschluss an Ihre Anfrage von unseren Kundenberater:innen kontaktiert. Diese gleichen das Projekt mit potenziellen Fachfirmen aus Ihrer Region ab. Natürlich unverbindlich und kostenlos."
+    },
+    "third": {
+      "headline": "Warum sollte ich Energiespektrum nutzen?",
+      "text": "Wir von Energiespektrum haben verstanden, wie wichtig die autarke Energieversorgung ist. Wir stellen smarte Service-Tools wie Checklisten, Bedarfsrechner und hochwertige Inhalte bereit, die Empfehlungen für passende und zukunftssichere Lösungen und somit eine gute Orientierung für Sie bieten. Die Suche nach einer passenden Fachfirma, der man vertraut, ist mühsam, zeitaufwendig und kompliziert. Vor allem eins wollen wir Ihnen bieten: Einfachheit. Wir helfen Ihnen mit unserer Erfahrung und unserem Netzwerk, genau die richtige Fachfirma in Ihrer Nähe zu finden - kostenlos."
+    },
+    "fourth": {
+      "headline": "Ist meine Anfrage bei Energiespektrum wirklich kostenlos?",
+      "text": "Ja. Unser Service kostet Sie nichts und ist absolut unverbindlich. Wir finanzieren den Service über die Provision unserer Anbieter."
+    },
+    "fifth": {
+      "headline": "Warum muss ich einen Fragebogen ausfüllen?",
+      "text": "Wir haben lange überlegt, wie Sie uns Ihr Projekt am einfachsten beschreiben können und sind zu dem Schluss gekommen, dass unser Fragebogen die perfekte Form ist. Ihre Antworten helfen uns dabei, die Auswahl der richtigen Fachfirmen für Sie zu erleichtern. Individuelle Details können Sie mit unseren Kundenberater:innen persönlich besprechen."
+    },
+    "sixth": {
+      "headline": "Was ist, wenn ich nach Beendigung des Projekts noch Fragen habe und/oder Hilfe benötige?",
+      "text": "Selbstverständlich stehen wir von Energiespektrum Ihnen auch nach Beendigung Ihres Projektes zur Verfügung. Bei Fragen und/oder Hilfsbedarf können Sie uns jederzeit über unser Kontaktformular kontaktieren."
+    },
+    "seventh": {
+      "headline": "Werden die Daten noch anderweitig genutzt?",
+      "text": "Nein. Ihre Daten geben wir an Partnerfirmen weiter, damit diese Ihnen ein Angebot unterbreiten können. Niemals werden wir Ihre Daten für andere Zwecke an Dritte weiterleiten."
+    }
+  },
+  "aboutSection": {
+    "first": {
+      "headline": "Unternehmen",
+      "text": {
+        "first": "Bei Energiespektrum bieten wir einfache und zugängliche Lösungen für die Energieversorgung der Zukunft. Wir verstehen, dass die Umstellung auf erneuerbare Energien für viele Menschen eine Herausforderung darstellen kann und wollen deshalb Lösungen anbieten, die einfach zu verstehen und zu nutzen sind.",
+        "second": "Unser Team setzt sich aus erfahrenen Fachleuten zusammen, die ständig daran arbeiten, innovative Lösungen für unsere Kunden zu entwickeln. Wir bieten individuell angepasste Energiekonzepte, die auf die Bedürfnisse und Ressourcen unserer Kunden abgestimmt sind."
+      }
+    },
+    "second": {
+      "headline": "Vision & Werte",
+      "text": "Wir sind überzeugt, dass die Energieversorgung der Zukunft einfach, nachhaltig und zugänglich sein muss. Mit unseren erneuerbaren Energielösungen wollen wir dazu beitragen, die Welt zu einem besseren Ort zu machen."
+    }
+  },
+  "CTASection": {
+    "headline": "Worauf warten sie?",
+    "subheadline": "Machen Sie sich unabhängig von steigenden Strompreisen!",
+    "CTA": "Jetzt Beratung anfordern"
+  },
+  "footerSection": {
+    "headline": "Energiespektrum 2023. Alle Rechte vorbehalten.",
+    "dateprotection": "Datenschutz",
+    "AGB": "AGB",
+    "impressum": "Impressum"
+  }
+}

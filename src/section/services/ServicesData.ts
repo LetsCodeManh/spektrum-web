@@ -6,24 +6,22 @@ type Service = {
   service: string;
   description: string;
   image: string;
-}
+};
 
 const services: Service[] = [
   {
-    service: "Persönliche Beratung",
-    description:
-      "Unsere Tools, Checklisten und Kundenberater:innen stehen Ihnen jederzeit Beratend zur Verfügung",
+    service: "servicesSection.servicesOption.first.headline",
+    description: "servicesSection.servicesOption.first.text",
     image: Beratung,
   },
   {
-    service: "Information",
-    description: "Expertenwissen und Tools Alles aus einer Hand!",
+    service: "servicesSection.servicesOption.second.headline",
+    description: "servicesSection.servicesOption.second.text",
     image: Information,
   },
   {
-    service: "Vermittlung",
-    description:
-      "Auf Wunsch vermittlen wir an ausgewählte Fachfirmen, damit Sie ihre Träume verwirklichen können",
+    service: "servicesSection.servicesOption.third.headline",
+    description: "servicesSection.servicesOption.third.text",
     image: Vermittlung,
   },
 ];

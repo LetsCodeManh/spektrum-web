@@ -12,39 +12,39 @@ type Offer = {
 
 const offers: Offer[] = [
   {
-    header: "Photovoltaik-Anlage",
+    header: "offerSection.first.headline",
     benefits: [
-      "Stomkostensenkung auf 8-12ct/kWh",
-      "Klimafreundliche Stromproduktion",
-      "Unabhängigkeit von Energieversorgern",
+      "offerSection.first.bulletPoints.first",
+      "offerSection.first.bulletPoints.second",
+      "offerSection.first.bulletPoints.third",
     ],
     image: Offer1,
     affiliate:
       "https://docs.google.com/forms/d/1A9g9mJ7rB6--3rI5PdjM7cErNVIg6fNhugSpwsIlYCQ/edit",
-    button: "Angebot anforden",
+    button: "offerSection.first.CTA",
   },
   {
-    header: "Wärmepumpe",
+    header: "offerSection.second.headline",
     benefits: [
-      "Unerschöpfliche Energiegewinnung",
-      "Nahezu Wartungsfrei",
-      "optimale Ergänzung zur PV Anlage",
+      "offerSection.second.bulletPoints.first",
+      "offerSection.second.bulletPoints.second",
+      "offerSection.second.bulletPoints.third",
     ],
     image: Offer2,
     affiliate:
       "https://docs.google.com/forms/d/1PyEI01n3eMwVBm8KFG8Pt-fNEPZXDx9lzE0c8sI0f6A/edit",
-    button: "Zum Angebot",
+    button: "offerSection.second.CTA",
   },
   {
-    header: "Balkonkraftwerk",
+    header: "offerSection.third.headline",
     benefits: [
-      "Für Einsteiger ohne eigenes Gebäude",
-      "Geringe Anschaffungskosten",
-      "Einfache Montage & Mobilität",
+      "offerSection.third.bulletPoints.first",
+      "offerSection.third.bulletPoints.second",
+      "offerSection.third.bulletPoints.third",
     ],
     image: Offer3,
     affiliate: "https://www.solar-volt.de/?ref=oE16Wkg-9mbnRD",
-    button: "Zum Angebot",
+    button: "offerSection.third.CTA",
   },
 ];
 

@@ -13,13 +13,9 @@ const links: Link[] = [
     label: "Angebot",
   },
   {
-    href: "#survey",
-    label: "Beratung",
-  },
-  {
     href: "#about",
     label: "Über uns",
   },
 ];
 
-export default links
+export default links;

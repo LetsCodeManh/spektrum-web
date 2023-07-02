@@ -5,6 +5,7 @@ import ContactPage from "./page/ContactPage";
 import DataProtectionPage from "./page/DataProtectionPage";
 import Impressum from "./page/Impressum";
 import AGBPage from "./page/AGBPage";
+import "./i18n";
 
 const App = () => {
   return (

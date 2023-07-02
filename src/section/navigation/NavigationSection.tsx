@@ -1,14 +1,18 @@
 import { useState } from "react";
-import links from "./NavigationData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import Logo from "../../assets/Nav1.png";
-import AttentionButton from "../../components/AttentionButton";
 import ProgressBar from "../../components/ProgressBar";
-import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
+const lngs = {
+  de: { nativeName: "DE" },
+  en: { nativeName: "EN" },
+};
 
 const NavigationSection = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t, i18n } = useTranslation();
 
   return (
     <div className="fixed top-0 left-0 z-50 w-full bg-white shadow-md">
@@ -34,20 +38,47 @@ const NavigationSection = () => {
             isOpen ? "top-20" : "top-[-490px]"
           }`}
         >
-          <ul className="flex flex-col items-center gap-8 md:flex-row md:flex md:items-center md:gap-6 md:pb-0 md:pl-0 md:w-auto">
-            {links.map((link, index) => (
-              <li key={index} className="text-xl md:my-0">
-                <a
-                  href={link.href}
-                  className="text-sm font-normal md:text-base hover:text-[#66b666] duration-300"
+          <ul className="flex flex-col items-center justify-center gap-8 md:flex-row md:flex md:items-center md:gap-6 md:pb-0 md:pl-0 md:w-auto">
+            <li className="flex items-center justify-center text-xl md:my-0">
+              <a
+                href="#services"
+                className="text-sm font-normal md:text-base hover:text-[#66b666] duration-300"
+              >
+                {t("navigation.service")}
+              </a>
+            </li>
+            <li className="flex items-center justify-center text-xl md:my-0">
+              <a
+                href="#offer"
+                className="text-sm font-normal md:text-base hover:text-[#66b666] duration-300"
+              >
+                {t("navigation.offer")}
+              </a>
+            </li>
+            <li className="flex items-center justify-center text-xl md:my-0">
+              <a
+                href="#about"
+                className="text-sm font-normal md:text-base hover:text-[#66b666] duration-300"
+              >
+                {t("navigation.about")}
+              </a>
+            </li>
+
+            <div className="flex items-center justify-center gap-2 text-sm font-normal md:text-base">
+              {Object.keys(lngs).map((lng) => (
+                <button
+                  className={`hover:text-[#66b666] duration-300 ${
+                    i18n.resolvedLanguage === lng ? `text-[#66b666]` : ``
+                  }`}
+                  type="submit"
+                  key={lng}
+                  onClick={() => i18n.changeLanguage(lng)}
+                  disabled={i18n.resolvedLanguage === lng}
                 >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-            <a href="https://share-eu1.hsforms.com/1Su2qESYwStSMLUigykOzXQfyab0">
-              <AttentionButton text="Partner werden" />
-            </a>
+                  {lngs[lng].nativeName}
+                </button>
+              ))}
+            </div>
           </ul>
         </div>
       </div>
